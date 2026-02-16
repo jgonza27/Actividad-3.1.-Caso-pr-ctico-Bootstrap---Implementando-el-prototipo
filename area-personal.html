@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Personal - UrbanWear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-bag-heart"></i> UrbanWear
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Hombres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown me-3">
+                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle fs-5 me-1"></i>
+                            <span>Juan García</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="area-personal.html"><i class="bi bi-person me-2"></i>Mi
+                                    perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box me-2"></i>Mis pedidos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="index.html"><i
+                                        class="bi bi-box-arrow-right me-2"></i>Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    <a href="carrito.html" class="position-relative">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <i class="bi bi-person-circle display-4 text-primary"></i>
+                            <h5 class="mt-2 mb-0">Juan García</h5>
+                            <p class="text-muted small">juan.garcia@email.com</p>
+                        </div>
+                        <hr>
+                        <nav class="nav flex-column">
+                            <a class="nav-link active bg-primary text-white rounded" href="#perfil"
+                                data-bs-toggle="tab">
+                                <i class="bi bi-person me-2"></i>Mi Perfil
+                            </a>
+                            <a class="nav-link text-dark" href="#pedidos" data-bs-toggle="tab">
+                                <i class="bi bi-box me-2"></i>Mis Pedidos
+                            </a>
+                            <a class="nav-link text-dark" href="#descuentos" data-bs-toggle="tab">
+                                <i class="bi bi-tag me-2"></i>Descuentos
+                            </a>
+                            <a class="nav-link text-dark" href="#metodos-pago" data-bs-toggle="tab">
+                                <i class="bi bi-credit-card me-2"></i>Métodos de Pago
+                            </a>
+                            <hr>
+                            <a class="nav-link text-danger" href="index.html">
+                                <i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="perfil">
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Información Personal</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Nombre Completo</label>
+                                            <input type="text" class="form-control" value="Juan García López">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Correo Electrónico</label>
+                                            <input type="email" class="form-control" value="juan.garcia@email.com">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Contraseña Actual</label>
+                                            <input type="password" class="form-control" placeholder="••••••••">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Nueva Contraseña</label>
+                                            <input type="password" class="form-control" placeholder="Nueva contraseña">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card mt-4">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Direcciones Guardadas</h5>
+                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#addAddressModal">
+                                    <i class="bi bi-plus"></i> Añadir Dirección
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card border">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 class="card-title">Dirección Principal</h6>
+                                                    <a href="#" class="text-primary"><i class="bi bi-pencil"></i></a>
+                                                </div>
+                                                <p class="card-text text-muted small mb-0">
+                                                    Calle Principal 123, Piso 4B<br>
+                                                    Madrid, 28001<br>
+                                                    España
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card border">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 class="card-title">Dirección de Facturación</h6>
+                                                    <a href="#" class="text-primary"><i class="bi bi-pencil"></i></a>
+                                                </div>
+                                                <p class="card-text text-muted small mb-0">
+                                                    Avenida Secundaria 456<br>
+                                                    Madrid, 28002<br>
+                                                    España
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pedidos">
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Mis Pedidos</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Nº Pedido</th>
+                                                <th>Fecha</th>
+                                                <th>Estado</th>
+                                                <th>Total</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#URB-2024-001</td>
+                                                <td>15/12/2024</td>
+                                                <td><span class="badge bg-success">Entregado</span></td>
+                                                <td>89.99 €</td>
+                                                <td><a href="#" class="btn btn-sm btn-outline-primary">Ver detalles</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>#URB-2024-002</td>
+                                                <td>10/12/2024</td>
+                                                <td><span class="badge bg-warning text-dark">En tránsito</span></td>
+                                                <td>145.50 €</td>
+                                                <td><a href="#" class="btn btn-sm btn-outline-primary">Ver detalles</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>#URB-2024-003</td>
+                                                <td>05/12/2024</td>
+                                                <td><span class="badge bg-info">Procesando</span></td>
+                                                <td>59.99 €</td>
+                                                <td><a href="#" class="btn btn-sm btn-outline-primary">Ver detalles</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="descuentos">
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Mis Descuentos</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card bg-primary text-white">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="mb-0">10% OFF</h4>
+                                                        <p class="small mb-0">En tu próxima compra</p>
+                                                    </div>
+                                                    <i class="bi bi-ticket-perforated display-6"></i>
+                                                </div>
+                                                <hr class="border-light">
+                                                <p class="small mb-0"><strong>Código:</strong> WELCOME10</p>
+                                                <p class="small mb-0">Válido hasta: 31/12/2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card bg-success text-white">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="mb-0">Envío Gratis</h4>
+                                                        <p class="small mb-0">En pedidos +50€</p>
+                                                    </div>
+                                                    <i class="bi bi-truck display-6"></i>
+                                                </div>
+                                                <hr class="border-light">
+                                                <p class="small mb-0"><strong>Código:</strong> FREESHIP</p>
+                                                <p class="small mb-0">Válido hasta: 15/01/2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="metodos-pago">
+                        <div class="card">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Métodos de Pago</h5>
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="bi bi-plus"></i> Añadir Tarjeta
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card border">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <div>
+                                                        <i class="bi bi-credit-card-2-front fs-3 text-primary"></i>
+                                                        <h6 class="mt-2 mb-1">•••• •••• •••• 4532</h6>
+                                                        <p class="text-muted small mb-0">Expira: 12/25</p>
+                                                    </div>
+                                                    <span class="badge bg-primary">Principal</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card border">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <div>
+                                                        <i class="bi bi-credit-card-2-front fs-3 text-secondary"></i>
+                                                        <h6 class="mt-2 mb-1">•••• •••• •••• 8901</h6>
+                                                        <p class="text-muted small mb-0">Expira: 06/26</p>
+                                                    </div>
+                                                    <a href="#" class="text-danger small">Eliminar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addAddressModalLabel">Añadir Nueva Dirección</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre de la dirección</label>
+                            <input type="text" class="form-control" placeholder="Ej: Casa, Trabajo...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Dirección</label>
+                            <input type="text" class="form-control" placeholder="Calle, número, piso...">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Ciudad</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Código Postal</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">País</label>
+                            <select class="form-select">
+                                <option selected>España</option>
+                                <option>Portugal</option>
+                                <option>Francia</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="defaultAddress">
+                            <label class="form-check-label" for="defaultAddress">
+                                Establecer como dirección principal
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar Dirección</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Política de Privacidad</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Términos de Servicio</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contacto.html" class="text-white-50">Formulario de contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center text-muted mb-0">© 2024 UrbanWear. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

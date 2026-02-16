@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanWear - Moda Urbana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-bag-heart"></i> UrbanWear
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Hombres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="registro.html" class="btn btn-primary me-3">Registro</a>
+                    <a href="carrito.html" class="position-relative">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide bg-primary text-white d-flex align-items-center justify-content-center"
+                    style="min-height: 500px;">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold">Descubre la moda urbana</h1>
+                        <p class="lead">Explora lo último en tendencias de moda urbana para hombres y mujeres en
+                            UrbanWear.</p>
+                        <a href="catalogo.html" class="btn btn-light btn-lg mt-3">Comprar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide bg-secondary text-white d-flex align-items-center justify-content-center"
+                    style="min-height: 500px;">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold">Nueva Colección Otoño</h1>
+                        <p class="lead">Descubre las últimas tendencias de la temporada.</p>
+                        <a href="catalogo.html" class="btn btn-light btn-lg mt-3">Ver Colección</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide bg-dark text-white d-flex align-items-center justify-content-center"
+                    style="min-height: 500px;">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold">Ofertas Especiales</h1>
+                        <p class="lead">Hasta 50% de descuento en artículos seleccionados.</p>
+                        <a href="catalogo.html" class="btn btn-warning btn-lg mt-3">Ver Ofertas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Nuevas llegadas</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=300&h=400&fit=crop"
+                            class="card-img-top" alt="Camisa Long Fit">
+                        <div class="card-body">
+                            <h6 class="card-title">Camisa Long Fit</h6>
+                            <p class="card-text text-muted small">Camiseta de hombre</p>
+                            <p class="fw-bold">39.99 €</p>
+                            <a href="producto.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=300&h=400&fit=crop"
+                            class="card-img-top" alt="Vestido Bohemio">
+                        <div class="card-body">
+                            <h6 class="card-title">Vestido Bohemio</h6>
+                            <p class="card-text text-muted small">Vestido de mujer</p>
+                            <p class="fw-bold">59.99 €</p>
+                            <a href="producto.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=300&h=400&fit=crop"
+                            class="card-img-top" alt="Chaqueta Urban">
+                        <div class="card-body">
+                            <h6 class="card-title">Chaqueta Urban</h6>
+                            <p class="card-text text-muted small">Chaqueta de hombre</p>
+                            <p class="fw-bold">89.99 €</p>
+                            <a href="producto.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=300&h=400&fit=crop"
+                            class="card-img-top" alt="Pantalón Slim">
+                        <div class="card-body">
+                            <h6 class="card-title">Pantalón Slim</h6>
+                            <p class="card-text text-muted small">Pantalón de mujer</p>
+                            <p class="fw-bold">49.99 €</p>
+                            <a href="producto.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Colecciones destacadas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=500&fit=crop"
+                            class="card-img" alt="Colección de Verano">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="bg-white p-3 w-100">
+                                <h5 class="card-title mb-1">Colección de verano</h5>
+                                <a href="catalogo.html" class="btn btn-sm btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=500&fit=crop"
+                            class="card-img" alt="Colección de Invierno">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="bg-white p-3 w-100">
+                                <h5 class="card-title mb-1">Colección de invierno</h5>
+                                <a href="catalogo.html" class="btn btn-sm btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=500&fit=crop"
+                            class="card-img" alt="Colección de Accesorios">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="bg-white p-3 w-100">
+                                <h5 class="card-title mb-1">Colección de accesorios</h5>
+                                <a href="catalogo.html" class="btn btn-sm btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Suscríbete a nuestro boletín</h3>
+                    <p class="text-muted">Recibe un 10% en tu primera compra y entérate de nuestras ofertas exclusivas,
+                        nuevos lanzamientos y promociones especiales.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-auto">
+                            <input type="email" class="form-control" placeholder="Tu email">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Política de privacidad</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Términos y condiciones</a></li>
+                        <li><a href="#" class="text-white-50">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Términos de servicio</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Devoluciones</a></li>
+                        <li><a href="#" class="text-white-50">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contacto.html" class="text-white-50">Formulario de contacto</a></li>
+                        <li><a href="#" class="text-white-50">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center text-muted mb-0">© 2024 UrbanWear. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
